@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.openWindow) var openWindow
+    
     var body: some View {
         NavigationView {
             List {
@@ -23,7 +25,9 @@ struct ContentView: View {
                 }
             }
             Text("oii")
-            Text("oii")
+            Button("Show What's New") {
+                        openWindow(id: "whats-new")
+                    }
         }
     }
 }

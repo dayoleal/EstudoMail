@@ -13,5 +13,8 @@ struct EstudoMailApp: App {
         WindowGroup {
             ContentView()
         }
+        Window("What's New", id: "whats-new") {
+            Text("New in this version…")
+        }
     }
 }
