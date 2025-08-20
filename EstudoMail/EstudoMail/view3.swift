@@ -11,8 +11,9 @@ struct view3: View {
             Spacer()
             VStack (alignment: .center, spacing: 20){
                 VStack (alignment: .leading, spacing: 15){
-                    Text("Nome")
+                    Text("Nome Completo")
                     TextField("Nome", text: $nome)
+                        .textContentType(.name)
                         .textFieldStyle(.plain)
                         .frame(width: 200)
                         .padding(.leading, 25)
@@ -28,10 +29,16 @@ struct view3: View {
                     Text("E-Mail")
                     TextField("email@provider.com", text: $email)
                         .frame(width: 200)
+                        .textContentType(.emailAddress)
                     
                     Text("Senha")
                     SecureField("*******", text: $senha)
                         .frame(width: 200)
+                        .textContentType(.newPassword)
+                    Text("Confirmar senha")
+                    SecureField("*******", text: $senha)
+                        .frame(width: 200)
+                        //if else senha confirmada
                 }
                 
                 Button {
