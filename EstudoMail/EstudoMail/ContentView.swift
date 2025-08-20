@@ -9,16 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Spacer()
-        }
-        .padding()
-        HStack {
-            Spacer()
+        NavigationView {
+            List {
+                NavigationLink {
+                    view3()
+                } label: {
+                    Label("Character", systemImage: "person.fill")
+                }
+                NavigationLink {
+                    view3()
+                } label: {
+                    Label("Character", systemImage: "person.fill")
+                }
+            }
+            Text("oii")
+            Text("oii")
         }
     }
 }
