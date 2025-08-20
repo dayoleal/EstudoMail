@@ -14,7 +14,7 @@ struct EstudoMailApp: App {
             ContentView()
         }
         Window("What's New", id: "whats-new") {
-            Text("New in this version…")
+            view3()
         }
     }
 }
