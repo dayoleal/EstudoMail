@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.openWindow) var openWindow
+    let backgroundGradient = LinearGradient(
+        colors: [Color.red, Color.blue],
+        startPoint: .top, endPoint: .bottom)
     
     var body: some View {
         NavigationView {
@@ -29,6 +32,7 @@ struct ContentView: View {
                         openWindow(id: "whats-new")
                     }
         }
+        .background(backgroundGradient)
     }
 }
 
