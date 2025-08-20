@@ -25,7 +25,7 @@ struct ContentView: View {
                 }
             }
             Text("oii")
-            Button("Log In") {
+            Button("Cadastro") {
                         openWindow(id: "whats-new")
                     }
         }

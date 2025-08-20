@@ -13,7 +13,7 @@ struct EstudoMailApp: App {
         WindowGroup {
             ContentView()
         }
-        Window("Log in", id: "whats-new") {
+        Window("Cadastro", id: "whats-new") {
             view3()
         }
     }
